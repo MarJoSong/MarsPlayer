@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file>main.qml</file>
+    </qresource>
+    <qresource prefix="/translation">
+        <file>MarsPlayer_zh_CN.qm</file>
+    </qresource>
+    <qresource prefix="/image">
+        <file>AppIcon.ico</file>
+        <file>image/bigVoice.png</file>
+        <file>image/changeLanguage.png</file>
+        <file>image/changeSkin.png</file>
+        <file>image/goBack.png</file>
+        <file>image/goOn.png</file>
+        <file>image/isPause.png</file>
+        <file>image/isPlay.png</file>
+        <file>image/isStop.png</file>
+        <file>image/midiumVoice.png</file>
+        <file>image/openFile.png</file>
+        <file>image/smallVoice.png</file>
+        <file>image/subTitle.png</file>
+        <file>image/zeroVoice.png</file>
+    </qresource>
+</RCC>

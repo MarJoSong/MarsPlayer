@@ -1,0 +1,9 @@
+/debug/
+/release/
+.qmake.stash
+/.vs/
+/venv/
+/packet_app/
+*.pro.user
+*.vcxproj.filters
+*.vcxproj.user
