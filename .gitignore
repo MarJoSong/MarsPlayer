@@ -7,3 +7,5 @@
 *.pro.user
 *.vcxproj.filters
 *.vcxproj.user
+*.vcxproj
+*.sln
