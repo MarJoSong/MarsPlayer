@@ -69,4 +69,6 @@ class MainApp : public QApplication {
 
 MainApp* GetMainApp();
 
+extern MainApp* g_pApp;
+
 #endif  // MAINAPP_H

@@ -1,9 +1,7 @@
-#include <QCoreApplication>
+﻿#include <QCoreApplication>
 #include <QQuickWindow>
 
 #include "MainApp.h"
-
-extern MainApp* g_pApp;
 
 int main(int argc, char* argv[]) {
   // 用软件来渲染图像，防止硬件渲染导致程序崩溃

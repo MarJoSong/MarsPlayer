@@ -17,11 +17,13 @@ RESOURCES += qml.qrc
 TRANSLATIONS += MarsPlayer_zh_CN.ts
 
 HEADERS += \
-    MainApp.h
+    MainApp.h \
+    MarsPlayer.h
 
 SOURCES += \
         main.cpp \
-    MainApp.cpp
+    MainApp.cpp \
+    MarsPlayer.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -1,4 +1,4 @@
-#include "MainApp.h"
+﻿#include "MainApp.h"
 
 #include <QDebug>
 #include <QDir>
@@ -8,11 +8,14 @@
 #include <QString>
 #include <QUrl>
 
+#include "MarsPlayer.h"
+
 #define APP_NAME "MarsPlayer"
 #define APP_DISPLAYNAME "MarsPlayer"
 #define APP_ICON_PATH "qrc:/image/AppIcon.ico"
 #define UI_MAIN_PATH "qrc:/qml/main.qml"
-#define UI_TRANSLATION_PATH ":/translation/MarsPlayer_zh_CN.qm" //不能加qrc,原因不详
+#define UI_TRANSLATION_PATH \
+  ":/translation/MarsPlayer_zh_CN.qm"  //不能加qrc,原因不详
 #define IMAGEDIR_RELATIVE_PATH "./image"
 #define DEFAULT_FONT_NAME "微软雅黑"
 
@@ -59,10 +62,6 @@ void MainApp::setDemoNum(int newValue) {
     emit demoNumChanged(m_demoNum);
   }
 }
-
-// int MainApp::Main(int argc, char **argv) {
-//;
-//};
 
 bool MainApp::Initialize() {
   setApplicationName(QStringLiteral(APP_NAME));
@@ -190,6 +189,7 @@ bool MainApp::InitializeUI(QQmlApplicationEngine* pQmlEngine) {
 
   qmlRegisterSingletonType<MainApp>("com.huahua.marsplayer", 1, 0, "MainApp",
                                     &MainApp::GetInstance);
+  qmlRegisterType<MarsPlayer>("com.huahua.marsplayer", 1, 0, "MarsPlayer");
 
   pQmlEngine->load(QUrl(QStringLiteral(UI_MAIN_PATH)));
   QList<QObject*> rootObjs(pQmlEngine->rootObjects());
